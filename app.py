@@ -36,6 +36,7 @@ with col1:
     max_value = st.number_input("Maximum Value:", value=100.0)
     min_value = st.number_input("Minimum Value:", value=60.0)
     bar_value = st.number_input("Bar Value:", value=75.0)
+    placebo_button = st.button("Create Boxplot", icon="🔥")
 
 numbers_str = [s for s in number_input.replace("\n", ",").split(",") if s]
 numbers = []
